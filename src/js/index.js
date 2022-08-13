@@ -23,6 +23,6 @@ async function handleSubmit(event) {
         const cards = await makeMarkup(data)
         gallery.insertAdjacentHTML('beforeend', cards)
     } catch (error) {
-        return console.error(error);
+        return console.log(error);
     }
 }
